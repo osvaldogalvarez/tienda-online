@@ -16,7 +16,7 @@ Permite usar boostrap en el proyecto
 
 Maneja el ruteo de la web
 
-### `npm install --save-dev node-sass
+### `npm install --save-dev node-sass`
 
 Permite estilar la web con el lenguaje de hojas de estilo sass
 
