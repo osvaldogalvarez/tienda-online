@@ -2,13 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { NavBar } from './components/NavBar/NavBar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
-import { ItemCount } from './components/ItemCount/ItemCount'
+
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
-  const onAdd = (count) => {
-    alert( `Agregaste ${count} items al carrito` )
-  }
+  
   return (
     <>
     
@@ -25,7 +23,7 @@ function App() {
     /*
       
       
-      <ItemCount stock={5} initial={1} onAdd={onAdd} />
+      
       
       */
     }

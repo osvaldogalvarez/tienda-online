@@ -1,7 +1,11 @@
+//@ts-check
 import React from 'react'
-
+import { ItemCount } from '../ItemCount/ItemCount'
 import { Card, ListGroup, ListGroupItem, Button} from 'react-bootstrap'
 export const ItemDetail = ({title, description, price, pictureUrl}) => {
+  const onAdd = (count) => {
+    alert( `Agregaste ${count} items al carrito` )
+  }
     return (
         
         <Card style={{ width: '28rem' }}>
@@ -28,6 +32,7 @@ export const ItemDetail = ({title, description, price, pictureUrl}) => {
           
         <Button variant="primary">Comprar</Button>
         </Card.Body>
+        <ItemCount stock={5} initial={1} onAdd={onAdd} />
       </Card>
       
       

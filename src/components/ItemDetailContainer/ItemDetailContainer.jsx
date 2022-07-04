@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { ItemDetail } from './ItemDetail'
 import { useParams } from "react-router-dom"
 import "./ItemDetailContainer.scss"
-
+import { Spinner } from 'react-bootstrap'
 
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState ({})
@@ -25,7 +25,7 @@ export const ItemDetailContainer = () => {
     <div>
         {
             loading?
-                <div>Cargando...</div>
+                <div className='loading'><Spinner animation="grow" variant="info" /></div>
             :    
             <ItemDetail {...product}/>
         }

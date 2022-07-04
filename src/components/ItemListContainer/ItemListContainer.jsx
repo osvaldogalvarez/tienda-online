@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { ItemList } from './ItemList'
 import { useParams } from "react-router-dom"
 import "./ItemListContainer.scss"
-
+import { Spinner } from 'react-bootstrap'
 
 export const ItemListContainer = () => {
 
@@ -30,7 +30,7 @@ export const ItemListContainer = () => {
     <div id='item-list-container'>
     {
       loading ?
-            <div>Cargando...</div>
+            <div><Spinner animation="border" variant="info" /></div>
         :
             <ItemList items ={products}/>    
     }</div>
