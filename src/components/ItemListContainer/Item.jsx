@@ -1,7 +1,10 @@
-import React from 'react'
-import {Card, Button} from 'react-bootstrap'
-import { Link } from "react-router-dom"
+
+import {Card, Button} from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import React, { useContext } from 'react'
+
 export const Item = ({id, title, price, description, pictureUrl}) => {
+  
   return (
 <Card style={{ width: '18rem' }} id="item">
     <Card.Img variant="top" src={pictureUrl} />
@@ -11,7 +14,7 @@ export const Item = ({id, title, price, description, pictureUrl}) => {
         <Card.Text>
         {description}
         </Card.Text>
-        <Button variant="primary">
+        <Button variant="secondary" size="lg" active>
            <Link to={`/item/${id}`} className="button-detail" >
            Ver detalles
            </Link>

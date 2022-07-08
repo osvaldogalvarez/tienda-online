@@ -5,7 +5,7 @@ import { FcRadarPlot } from "react-icons/fc"
 import { CartWidget } from "./CartWidget"
 import "./NavBar.scss"
 import { Link } from "react-router-dom"
-import { LinkBox } from '@chakra-ui/react'
+
 export const NavBar =() => {
   return (
 <Navbar bg="dark" variant="dark" id='nav-bar' >
