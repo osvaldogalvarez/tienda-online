@@ -38,6 +38,11 @@ export const NavBar =() => {
             Serie gamers
           </Link>
           </NavDropdown.Item>
+          <NavDropdown.Item>
+          <Link to={"/category/gamers"}> 
+            Serie gamers
+          </Link>
+          </NavDropdown.Item>
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>

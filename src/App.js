@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Cart } from './components/cart/Cart';
 import './App.css';
 import { NavBar } from './components/NavBar/NavBar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
@@ -22,6 +23,7 @@ function App() {
         <Route path= '/' element={ <ItemListContainer/> } />
         <Route path= '/category/:categoryId'  element={ <ItemListContainer/> } />
         <Route path= '/item/:itemId'  element={ <ItemDetailContainer/> } />
+        <Route path='/Cart' element= { <Cart/> } />
      </Routes>
      </CartProvider>
      </BrowserRouter>
